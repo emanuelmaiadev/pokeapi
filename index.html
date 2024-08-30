@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokepage</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+
+        <h1 class="h1Head" id="headerTitle"> Pokémon page </h1>
+        
+        <ul class="headList" id="navList">
+
+            <li class="headListItem" id="navPokemon">Pokémon</li>
+            <li class="headListItem" id="navMoves">Moves</li>
+            <li class="headListItem" id="navAbilities">Abilities</li>
+            <li class="headListItem" id="navSpecies">Species</li>
+            
+        </ul>
+
+        <input type="text" placeholder="Poké Search" id="pokeSearch">
+
+    </header>
+
+    <section class="mainSection" id="mainContent">
+        <input type="text" id="searchInput" placeholder="Search">
+        <button id="searchBtn" onclick="searchpokemon()">Search</button>
+        
+        <div id="resultsDiv" class="resultsDiv"></div>
+
+    </section>
+
+<div class="pagination">
+    
+    <button id="prevBtn" onclick="changePage('prev')">Back</button>
+    <button id="nextBtn" onclick="changePage('next')">next</button>
+    
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
