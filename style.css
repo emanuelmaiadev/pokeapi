@@ -70,3 +70,66 @@ body {
     justify-content: center;
     margin-top: 20px;
 }
+@media(max-width: 1200px){
+    .card{
+        width: calc(25% - 20px);
+    }
+}
+@media(max-width: 900px){
+    .card{
+        width: calc(33.33% - 20px)
+    }
+}
+@media (max-width: 600px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    .headList {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .headListItem {
+        padding: 10px;
+    }
+
+    .pagination {
+        flex-direction: column;
+    }
+
+    .pagination button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: calc(100% - 20px); 
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    .headList {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .headListItem {
+        padding: 10px;
+    }
+
+    .pagination {
+        flex-direction: column;
+    }
+
+    .pagination button {
+        margin-bottom: 10px;
+    }
+}
